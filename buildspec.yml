@@ -1,13 +1,16 @@
-version: 0.2    
+version: 0.2   
+
 phases:
-   install:
+  install:
     runtime-versions:
-      nodejs: 8
+      nodejs: 8  
     commands:
-      - npm install
+      - npm install 
+      - npm install -g serverless 
   build:
     commands:
-      - serverless deploy
+      - serverless deploy 
+   
       
 
  
