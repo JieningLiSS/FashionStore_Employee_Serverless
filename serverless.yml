@@ -1,0 +1,31 @@
+service: employee-service
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-east-2
+  memorySize: 512
+
+functions:
+  pokemonFunc:
+    handler: index.handler
+    events:
+      - http:
+          path: employees
+          method: get
+      - http:
+          path: employees/{employeeId}
+          method: get
+      - http:
+          path: employees
+          method: post
+      - http:
+          path: employees/{employeeId}
+          method: put
+      - http:
+          path: employees/{employeeId}
+          method: delete
+
+plugins:
+  - serverless-offline
