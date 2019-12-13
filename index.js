@@ -7,7 +7,7 @@ app.use(bodyParser.json())
 
 app.use(bodyParser.urlencoded({ extended: true }))
 
-// Handle employee GET route for all coupons
+// Handle employee GET route for all employees
 app.get('/employees/', (req, res) => {
   const query = 'SELECT * FROM employees'
   pool.query(query, (err, results, fields) => {
@@ -24,7 +24,7 @@ app.get('/employees/', (req, res) => {
   })
 })
 
-// Handle employee GET route for a specific coupon
+// Handle employee GET route for a specific employee
 app.get('/employees/:employeeId', (req, res) => {
   const employeeId = req.params.employeeId
   const query = `SELECT * FROM employees WHERE employeeId =${employeeId}`
