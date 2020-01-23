@@ -2,13 +2,13 @@ service: employee-service
 
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs12.x
   stage: dev
   region: us-east-2
   memorySize: 512
 
 functions:
-  pokemonFunc:
+  employeeFunc:
     handler: index.handler
     events:
       - http:
