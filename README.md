@@ -10,7 +10,9 @@ An AWS account. You can sign up for a free account here
 # Built With
 
 the serverless framework - CLI tool for building serverless apps
+
 AWS Lambda Functions - serverless cloud provider
+
 Node.js
 
 # Getting Started
