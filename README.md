@@ -7,7 +7,7 @@ REST API for GC fashion store management, built with the Serverless framework.
 - Node.js v12.x or greater
 - An AWS account. You can sign up for a free account [here](http://aws.amazon.com/free)
 
-# Built With
+## Built With
 
 - [the serverless framework](https://serverless.com/) - CLI tool for building serverless apps
 - [AWS Lambda Functions](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) - serverless cloud provider
